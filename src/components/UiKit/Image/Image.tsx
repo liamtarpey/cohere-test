@@ -8,7 +8,7 @@ function Image({
   $rounded = false,
   $fullWidth = false,
   $pushDown = [1, 1, 1],
-  ...props
+  ...rest
 }: ImageProps) {
   const [imgSrc, setImgSrc] = useState<string>(src);
 
@@ -24,7 +24,7 @@ function Image({
       $pushDown={$pushDown}
       loading="lazy"
       onError={handleError}
-      {...props}
+      {...rest}
     />
   );
 }

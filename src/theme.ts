@@ -35,6 +35,7 @@ const LAYOUT_MAX_WIDTH = '60rem';
 const colors = {
   white: '#FFFFFF',
   black: '#000000',
+  blue: '#1a0dab',
   lightGrey: '#D9D9D9',
   darkGrey: '#4A4A4A',
   lightRed: '#FDE8E8',
@@ -63,6 +64,7 @@ export const theme = {
     textSecondary: colors.darkGrey,
     dropdown: colors.lightGrey,
     border: colors.lightGrey,
+    link: colors.blue,
     button: colors.darkGreen,
     errorBg: colors.lightRed,
     errorText: colors.darkRed,

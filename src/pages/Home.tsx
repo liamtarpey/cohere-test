@@ -10,6 +10,7 @@ import Heading from '@components/UiKit/Heading/Heading';
 import Text from '@components/UiKit/Text/Text';
 import Image from '@components/UiKit/Image/Image';
 import NotificationBox from '@components/UiKit/NotificationBox/NotificationBox';
+import Link from '@components/UiKit/Link/Link';
 import FormField from '@components/UiKit/FormField/FormField';
 import Select from '@components/UiKit/Select/Select';
 import Input from '@components/UiKit/Input/Input';
@@ -53,9 +54,14 @@ function Home() {
   return (
     <Container $pushTop={[3, 3, 3]} $pushBottom={[3, 3, 3]}>
       <Heading>Homepage</Heading>
+
       <Text>Hello! here's some text to get started with</Text>
+
       <Image src="https://placecats.com/300/200" $rounded />
+
       <NotificationBox $variant="danger">This is an error!</NotificationBox>
+
+      <Link href="https://www.cohere.com">Click me!</Link>
 
       {/* Basic form */}
       <form onSubmit={onSubmitForm}>
