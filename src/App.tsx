@@ -7,6 +7,8 @@ import { theme } from '@theme';
 
 // Pages
 import Home from '@pages/Home';
+
+// API
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 // Define a new client for react-query

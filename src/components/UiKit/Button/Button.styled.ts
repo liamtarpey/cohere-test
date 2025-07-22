@@ -9,6 +9,7 @@ export const StyledButton = styled.button<ButtonProps>`
     border-radius: ${radii.sm};
     background-color: ${colors.button};
     color: ${colors.textLight};
+    border-radius: ${radii.md};
 
     &:disabled {
       opacity: 0.6;
