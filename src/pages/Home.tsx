@@ -39,6 +39,10 @@ function Home() {
   const onSubmitForm = (e: React.FormEvent) => {
     if (e) e.preventDefault();
     console.log('form submitted!', inputValue, selectValue);
+
+    // Reset form
+    setInputValue('');
+    setSelectValue('');
   };
 
   // Loading state
@@ -55,7 +59,7 @@ function Home() {
     <Container $pushTop={[3, 3, 3]} $pushBottom={[3, 3, 3]}>
       <Heading>Homepage</Heading>
 
-      <Text>Hello! here's some text to get started with</Text>
+      <Text>Hello! here's some basic text.</Text>
 
       <Image src="https://placecats.com/300/200" $rounded />
 
